@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func findPair(array []int, target int) []int {
+func PairSum(array []int, target int) []int {
 	left := 0
 	right := len(array) - 1
 
@@ -22,6 +22,6 @@ func findPair(array []int, target int) []int {
 }
 
 func main() {
-	fmt.Println(findPair([]int{1, 2, 3, 4, 6}, 5)) // Output: [1, 3]
-	fmt.Println(findPair([]int{2, 5, 9, 11}, 11))  // Output: [0, 2]
+	fmt.Println(PairSum([]int{1, 2, 3, 4, 6}, 5)) // Output: [1, 3]
+	fmt.Println(PairSum([]int{2, 5, 9, 11}, 11))  // Output: [0, 2]
 }
